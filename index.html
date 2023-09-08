@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
     <title>Profile Page</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h2>Profile</h2>
+      <i class="fa-solid fa-xmark"></i>
+    </nav>
+    <header class="hero">
+      <img
+        src="https://ca.slack-edge.com/T05FFAA91JP-U05R0RF8FU7-112ddc153452-512"
+        alt="El-Jakes"
+        data-testid="slackDisplayImage"
+      />
+      <h1 class="profile-name" data-testid="slackUserName">Babajide Leke</h1>
+      <p
+        class="user-online-status"
+        id="user-online-status"
+        data-testid="onlineStatus"
+      >
+        Active
+      </p>
+      <h2 class="user-track" id="user-track" data-testid="myTrack">Frontend</h2>
+      <div class="current-date">
+      <h2
+        class="current-day"
+        id="current-day"
+        data-testid="currentDayofTheWeek"
+      >
+        Friday
+      </h2>
+      <p class="current-time" id="current-time" data-testid="currentUTCTime">
+        <i class="fa-regular fa-clock"></i> 8:00
+      </p>
+      </div>
+      <div class="buttons">
+      <button class="edit">Edit Status</button
+      ><button class="edit">Edit Profile</button>
+      </div>
+    </header>
+    <main>
+        <section class="profile-links-wrapper">
+        <div class="profile-links-heading-container">
+        <h5 class="Profile-links-heading">Contact Information</h5>
+        <h5>Edit</h5>
+        </div>
+        <a
+          href="https://github.com/El-Jakes/profile-page"
+          class="github-url"
+          data-testid="githubUrl"
+          ><i class="fa-brands fa-github"></i> Task Repository</a
+        >
+        </section>
+    </main>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
