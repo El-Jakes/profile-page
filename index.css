@@ -7,10 +7,41 @@
 }
 
 body {
-  text-align: center;
+  /* text-align: center; */
   font-family: "Montserrat", sans-serif;
 }
 
-.profile-image {
+.container {
+  max-width: 500px;
   width: 100%;
+  margin: 0 auto;
+  background-color: #d1d2d380;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  height: 50px;
+  background-color: #000;
+  color: #ffffff;
+}
+
+.nav-bar > h2 {
+  text-align: left;
+}
+
+.profile-img-wrapper {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  /* border: 1px solid red; */
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 15px;
 }
