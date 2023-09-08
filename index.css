@@ -10,3 +10,7 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
+
+.profile-image {
+  width: 100%;
+}
