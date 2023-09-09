@@ -5,5 +5,5 @@ const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday
 
 
 const date = new Date()
-currentDay.innerHTML = weekday[date.getDay()]
+currentDay.innerHTML = `${weekday[date.getDay()]}, `
 currentTime.innerHTML = date.getUTCMilliseconds()

@@ -15,46 +15,37 @@
     <title>Profile Page</title>
   </head>
   <body>
-    <nav class="nav-bar container">
+    <div class="container">
+    <nav class="nav-bar">
         <i class="fa-solid fa-less-than"></i>
         <h2>Profile</h2>
         <i class="fa-solid fa-xmark"></i>
     </nav>
-    <header class="hero container">
+    <header class="hero">
       <div class="profile-img-wrapper">
-      <img
-        src="https://ca.slack-edge.com/T05FFAA91JP-U05R0RF8FU7-112ddc153452-512"
-        alt="El-Jakes" class="profile-img"
-        data-testid="slackDisplayImage"
-      />
+      <img src="https://ca.slack-edge.com/T05FFAA91JP-U05R0RF8FU7-112ddc153452-512" alt="El-Jakes" class="profile-img" data-testid="slackDisplayImage"/>
       </div>
+
       <h1 class="profile-name" data-testid="slackUserName">Babajide Leke</h1>
-      <p
-        class="user-online-status"
-        id="user-online-status"
-        data-testid="onlineStatus"
-      >
-        Active
-      </p>
       <h2 class="user-track" id="user-track" data-testid="myTrack">Frontend</h2>
+
+      <div class="status">
+      <i class="fa-solid fa-circle"></i>
+      <span class="user-online-status" id="user-online-status" data-testid="onlineStatus">Active</span>
+      </div>
+
       <div class="current-date">
-      <h2
-        class="current-day"
-        id="current-day"
-        data-testid="currentDayofTheWeek"
-      >
-        Friday
-      </h2>
-      <p class="current-time" id="current-time" data-testid="currentUTCTime">
-        <i class="fa-regular fa-clock"></i> 8:00
-      </p>
+      <i class="fa-regular fa-clock"></i>
+      <p class="current-day" id="current-day" data-testid="currentDayofTheWeek"></p>
+      <p class="current-time" id="current-time" data-testid="currentUTCTime"></p>
       </div>
       <div class="buttons">
       <button class="edit">Edit Status</button
       ><button class="edit">Edit Profile</button>
+      <i class="fa-solid fa-ellipsis-vertical edit"></i>
       </div>
     </header>
-    <main class="container">
+    <main>
         <section class="profile-links-wrapper">
         <div class="profile-links-heading-container">
         <h5 class="Profile-links-heading">Contact Information</h5>
@@ -68,6 +59,7 @@
         >
         </section>
     </main>
+    </div>
 
     <script src="index.js"></script>
   </body>
