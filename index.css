@@ -7,13 +7,12 @@
 }
 
 body {
-  /* text-align: center; */
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
 }
 
 .container {
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   margin: 0 auto;
   background-color: #1a1d21;
@@ -30,7 +29,7 @@ main {
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #434549;
   justify-content: space-between;
   height: 50px;
 }
@@ -48,18 +47,14 @@ main {
 }
 
 .hero {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.35em; */
+  width: 100%;
 }
 
 .profile-img-wrapper {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   margin: 1em auto;
   border-radius: 15px;
-  /* border: 1px solid red; */
 }
 
 .profile-img {
@@ -67,11 +62,16 @@ main {
   border-radius: 15px;
 }
 
+.user-track {
+  margin: 0.5em 0;
+}
+
 .fa-circle {
   color: green;
 }
+
 .status {
-  margin: 0.5em 0;
+  margin: 1em 0;
 }
 
 .user-online-status {
@@ -83,14 +83,14 @@ main {
 .current-date {
   display: flex;
   align-items: center;
-  margin: 0.5em 0;
+  margin: 1em 0;
 }
 
 .fa-clock {
   font-size: 1.5rem;
 }
 
-.current-day {
+.current-time {
   margin: 0 0.7em;
 }
 
@@ -100,19 +100,28 @@ main {
   align-items: center;
   justify-content: center;
   gap: 0.5em;
-  margin: 0.5em;
+  margin: 1em 0;
 }
 
-.edit {
+.edit-btn {
+  cursor: pointer;
   width: 150px;
   height: 40px;
   border: 1px solid #434549;
   outline: none;
   background-color: #1a1d21;
+  font-size: 0.875rem;
   color: #ffffff;
 }
 
-.fa-ellipsis-vertical {
+.fa-chevron-down {
+  margin-left: 1.2em;
+}
+
+.edit-btn-menu {
   width: 40px;
-  font-size: 1.5rem;
+}
+
+.fa-ellipsis-vertical {
+  font-size: 0.875rem;
 }
