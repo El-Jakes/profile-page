@@ -16,6 +16,7 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
+  padding-bottom: 2em;
   background-color: #1a1d21;
   text-align: left;
 }
